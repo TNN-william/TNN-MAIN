@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聯絡洽詢-Tnn數位台灣網頁設計</title>
+<!-- meta -->
+<meta name="description" content="聯絡Tnn，網頁設計公司Tnn專長以響應式網頁設計(RWD)為客戶設計網站，可通過google行動裝置相容性測試，行動裝置訂單不漏接，以專業的網頁設計服務在業界建立起好口碑。">
+<meta name="keywords" content="網頁設計洽詢,RWD網頁設計" />
+<meta property="og:title" content="聯絡洽詢-Tnn數位台灣網頁設計"/>
+<meta property="og:description" content="聯絡Tnn，網頁設計公司Tnn專長以響應式網頁設計(RWD)為客戶設計網站，可通過google行動裝置相容性測試，行動裝置訂單不漏接，以專業的網頁設計服務在業界建立起好口碑。" />
+<!-- og -->
+<meta property="og:url" content="http://design.tnn.tw/contact.html"/>
+<meta property="og:site_name" content="Tnn數位台灣網頁設計" />
+<meta property="og:type" content="website" />
+<?php include("css.html"); ?>
+<!-- 日曆 -->
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/datepicker-zh-TW.js"></script><!-- 繁體中文 -->
+</head>
+<body>
+<div class="wrap">
+	<?php include("top.html"); ?>
+    <div class="bg bg04">
+    	<div class="bg01a">
+        	<h1 data-kui-anim="slideInLeft">請幫我們填寫完整資訊</h1>
+            <em data-kui-anim="slideInRight">及詳細內容，方便我們了解您的需求</em>
+        </div>
+    </div>
+    <div id="wrapper">
+		<div class="index">
+            <form class="contact">
+            	<h2>關於您</h2>
+                <div class="contact_box01">
+                	<div class="contact_box01a"><input name="" type="text" placeholder="姓名(必填)"><i class="fa fa-user"></i></div>
+                	<div class="contact_box01a"><select name="">
+                	  <option>稱謂</option>
+                	  <option>小姐</option>
+                	  <option>先生</option>
+                	</select><i class="fa fa-users"></i></div>
+                	<div class="contact_box01a"><input name="" type="text" placeholder="公司名稱"><i class="fa fa-building"></i></div>
+                	<div class="contact_box01a"><input name="" type="text" placeholder="產業類型"><i class="fa fa-suitcase"></i></div>
+                	<div class="contact_box01a"><input name="" type="text" placeholder="聯絡電話(必填)"><i class="fa fa-phone"></i></div>
+                	<div class="contact_box01a"><input name="" type="text" placeholder="傳真"><i class="fa fa-fax"></i></div>
+                	<div class="contact_box01a"><input name="" type="text" placeholder="E-mail(必填)"><i class="fa fa-envelope"></i></div>
+                	<div class="contact_box01a"><input name="" type="text" placeholder="網址"><i class="fa fa-link"></i></div>
+                	<div class="contact_box01b"><label>請問您從何得知本網站? <label><input name="data_comefrom" value="Goolge搜尋" id="data_comefrom" type="radio">Goolge搜尋</label> <label><input name="data_comefrom" value="Yahoo搜尋" id="data_comefrom" type="radio">Yahoo搜尋</label> <label><input name="data_comefrom" value="朋友介紹 " id="data_comefrom" type="radio">朋友介紹</label> <label><input name="data_comefrom" value="其他" id="data_comefrom" type="radio">其他</label>
+                    </label></div>
+                </div>
+                <br>
+                <br>
+            	<h2>您的需求</h2>
+                <div class="contact_box01">
+                	<div class="contact_box01c"><input name="" type="text" placeholder="設計預算"><i class="fa fa-usd"></i></div>
+                	<div class="contact_box01c"><select name="">
+                	  <option>洽詢主題</option>
+                	  <option>案件報價</option>
+                	  <option>合作提案</option>
+                	</select><i class="fa fa-header"></i></div>
+                	<div class="contact_box01c"><input name="" type="text" id="sDay" placeholder="希望完成日期"><i class="fa fa-calendar"></i></div>
+                	<div class="contact_box01b"><textarea name="" cols="" rows="" placeholder="請簡單的寫下您的需求(必填)"></textarea></div>
+                	<div class="contact_box01a"><input name="" type="text" placeholder="驗證碼(必填)"><i class="fa fa-unlock-alt"></i></div>
+                	<div class="contact_box01e"><img src="http://design.tnn.tw/authimg.php" border="0"></div>
+                    <div class="contact_box01d"><a href="#" class="contact_b01" title="確認送出">確認送出</a></div>
+                </div>
+            </form>
+		</div>
+    </div>
+    <?php include("down.html"); ?>
+</div>
+
+<?php include("js.html"); ?>
+<script type='text/javascript'>
+$(function(){	
+	$("#sDay").datepicker();	
+});
+</script>
+</body>
+</html>
